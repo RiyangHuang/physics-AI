@@ -93,7 +93,7 @@ m23_low_tf = tf.constant(m23_low, dtype=tf.float32)
 m33_low_tf = tf.constant(m33_low, dtype=tf.float32)
 
 theta_angles = tf.constant(np.arange(0, 91, 1), dtype=tf.float32)
-phi_angles = tf.constant(np.arange(0, 361, 1), dtype=tf.float32)
+phi_angles = tf.constant(np.arange(0, 360, 1), dtype=tf.float32)
 
 
 # ============================================================================
@@ -269,7 +269,7 @@ if __name__ == "__main__":
     epochs = 100
     init_lr = 1e-4
     batch_size = 400
-    num_class = 452
+    num_class = 451
 
     path = "/root/autodl-tmp"
     savepath = "/root/autodl-tmp"
